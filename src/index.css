@@ -1,0 +1,115 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root:not(.dark) body,
+body:not(.dark) {
+  background-color: #FFFFFF;
+  color: #1C1C1E;
+}
+
+:root.dark body,
+body.dark {
+  background-color: #000000;
+  color: #F5F5F7;
+}
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(10, 132, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 132, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.blueprint-line {
+  border-top: 2px dashed rgba(10, 132, 255, 0.3);
+}
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+.light ::-webkit-scrollbar-track,
+:root:not(.dark) ::-webkit-scrollbar-track {
+  background: #F5F5F7; 
+}
+
+:root:not(.dark) ::-webkit-scrollbar-thumb,
+.light ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3B82F6, #9333EA);
+  border-radius: 6px;
+}
+
+:root:not(.dark) ::-webkit-scrollbar-thumb:hover,
+.light ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9333EA, #3B82F6);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FFD700, #FF6B35);
+  border-radius: 6px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF6B35, #FFD700);
+}
+
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+  
+  a, button, input, textarea, select {
+    cursor: pointer !important;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(59, 130, 246, 0.15);
+}
+
+.dark * {
+  -webkit-tap-highlight-color: rgba(255, 214, 10, 0.15);
+}
+
+@media (pointer: coarse) {
+  button:active,
+  a:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+    opacity: 0.85;
+  }
+}
