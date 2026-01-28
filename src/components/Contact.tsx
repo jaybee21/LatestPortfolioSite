@@ -6,7 +6,7 @@ import {
   MapPinIcon,
   SendIcon,
 } from "lucide-react";
-import resume from "../assets/Michael_King_Resume.pdf";
+import resume from "../assets/Jabule Simanga.pdf";
 import { MagneticButton } from "./MagneticButton";
 
 export function Contact() {
