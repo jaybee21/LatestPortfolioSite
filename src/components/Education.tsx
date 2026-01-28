@@ -9,7 +9,7 @@ export function Education() {
 
   const credentials = [{
     icon: GraduationCapIcon,
-    title: 'BS Computer Science',
+    title: 'BSC Computer Science',
     institution: 'National University of Science and Technology',
     year: '2018-2022',
     color: 'gold'

@@ -431,7 +431,7 @@ describe('Button', () => {
                 number={stats?.totalRepos || 0}
                 label="Projects Built"
               />
-              <StatCard number="From Requirements → Reliable Software" label="Unique Journey" />
+              <StatCard number="From Requirements → Reliable Software" label="" />
               <StatCard number="Quality Obsessed" label="Core Value" />
             </>
           )}
