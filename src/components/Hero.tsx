@@ -8,7 +8,7 @@ import { useTypingEffect } from "../hooks/useTypingEffect";
 
 export function Hero() {
   const { displayedText } = useTypingEffect(
-    "3+ Years of building pixel perfect production ready apps",
+    "4+ Years of building pixel perfect production ready apps",
   40,
     1500
   );
