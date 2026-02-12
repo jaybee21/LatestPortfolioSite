@@ -39,7 +39,7 @@ export function Hero() {
   useEffect(() => {
     console.log(
       `
-    %c🚴‍♂️ MICHAEL KING - Frontend Developer %c
+    %c🚴‍♂️ Jabule Simanga - Frontend Developer %c
     
     %cHey there, fellow developer! 👋
     
@@ -79,7 +79,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      aria-label="Hero - Michael King Frontend Developer"
+      aria-label="Hero - Jabule Simanga Frontend Developer"
       role="banner"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent pt-16"
     >
